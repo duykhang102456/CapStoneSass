@@ -1,1 +1,215 @@
-/*# sourceMappingURL=index.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #fff;
+  color: #222;
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+  background: #000;
+  color: #fff;
+}
+.header .header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background: #000;
+}
+.header .header__top .header__logo {
+  display: flex;
+  align-items: center;
+  width: 116px;
+  height: 32px;
+  background: url(/img/Logo.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 24px;
+}
+.header .header__top .header__actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.header .header__top .header__actions .header__cart {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+.header .header__top .header__actions .header__cart svg {
+  display: block;
+  width: 28px;
+  height: 28px;
+}
+.header .header__top .header__actions a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 300;
+  transition: color 0.2s;
+}
+.header .header__top .header__actions a:hover {
+  color: #ffd600;
+}
+.header .nav {
+  background: #fff;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+.header .nav .nav__container {
+  width: 100%;
+  max-width: 1280px;
+  height: 50px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: left;
+  background: #fff;
+  margin-left: -100px;
+}
+.header .nav .nav__container ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 20px;
+  align-items: flex-end;
+  font-size: 12px;
+}
+.header .nav .nav__container ul li {
+  margin-right: 40px;
+  display: flex;
+  align-items: center;
+}
+.header .nav .nav__container ul li a {
+  color: #444;
+  font-size: 20px;
+  font-weight: 200;
+  text-decoration: none;
+  transition: color 0.2s;
+  position: relative;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.header .nav .nav__container ul li a.active {
+  color: #111;
+  font-weight: 400;
+}
+.header .nav .nav__container ul li a.active::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #111;
+  border-radius: 3px;
+  margin-top: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+}
+
+.banner {
+  position: relative;
+  background: #fff;
+}
+.banner .banner__content {
+  display: flex;
+  align-items: center;
+  padding: 40px 60px 0 60px;
+}
+.banner .banner__content .banner__img {
+  width: 350px;
+  height: auto;
+  margin-right: 40px;
+}
+.banner .banner__content .banner__info h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.banner .banner__content .banner__info p {
+  margin-bottom: 20px;
+}
+.banner .banner__content .banner__info .btn {
+  background: #f4a51c;
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.banner .banner__curve {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 80px;
+  background: #e53935;
+  border-bottom-left-radius: 100% 80px;
+  border-bottom-right-radius: 100% 80px;
+  z-index: 1;
+}
+
+.product-feature {
+  padding: 60px 0 40px 0;
+  text-align: center;
+}
+.product-feature h2 {
+  margin-bottom: 40px;
+  font-size: 1.5rem;
+}
+.product-feature .product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.product-feature .product-list .product-card {
+  background: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  width: 220px;
+  padding: 20px;
+  text-align: left;
+}
+.product-feature .product-list .product-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.product-feature .product-list .product-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+.product-feature .product-list .product-card p {
+  font-size: 0.95rem;
+  color: #888;
+  margin-bottom: 15px;
+}
+.product-feature .product-list .product-card .product-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product-feature .product-list .product-card .product-card__footer .btn {
+  background: #f4a51c;
+  color: #fff;
+  border: none;
+  padding: 7px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+.product-feature .product-list .product-card .product-card__footer .product-card__price {
+  font-weight: bold;
+  font-size: 1rem;
+}/*# sourceMappingURL=index.css.map */
