@@ -10,13 +10,6 @@
     <header class="header">
         <div class="header__top">
             <div class="header__logo"></div>
-            <nav class="header__nav">
-                <a href="#">Home</a>
-                <a href="#">Men</a>
-                <a href="#">Woman</a>
-                <a href="#">Kid</a>
-                <a href="#">Sport</a>
-            </nav>
             <div class="header__actions">
                  <span class="header__cart">
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -47,10 +40,10 @@
                 <div class="product-detail__image">
                     <img src="/img/image.png" alt="Product">
                 </div>
-                <div class="product-detail__info">
+                <div class="product-detail__info"> 
                     <h2>Product name</h2>
                     <p class="product-detail__desc">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores pariatur sequi esse ducimus velit dicta sapiente! Totam inventore, tempore enim repellat illum qui a quae aperiam officiis, error repellat sunt nulla! (Thực: tĩnh Description)
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores pariatur sequi esse ducimus velit dicta sapiente! Totam inventore, tempore enim repellat illum qui a quae aperiam officiis, error repellat sunt nulla!
                     </p>
                     <div class="product-detail__sizes">
                         <span class="label">Available size</span>
@@ -69,66 +62,19 @@
                         <button class="btn-qty">+</button>
                     </div>
                     <button class="btn-add-cart">Add to cart</button>
+                    <!-- Thêm nút thao tác API -->
+                    <div class="product-detail__actions">
+                        <button id="btn-create" class="btn-action">Thêm sản phẩm</button>
+                        <button id="btn-update" class="btn-action">Sửa sản phẩm</button>
+                        <button id="btn-delete" class="btn-action">Xóa sản phẩm</button>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="related-product">
-            <h2>- Realate Product -</h2>
+            <h2>- Related Product -</h2>
             <div class="product-list">
-                <div class="product-card">
-                    <img src="/img/image.png" alt="Adidas Prophere">
-                    <h3>Adidas Prophere</h3>
-                    <p>short descript ...</p>
-                    <div class="product-card__footer">
-                        <button class="btn">Buy now</button>
-                        <span class="product-card__price">85$</span>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <img src="/img/image.png" alt="Adidas Prophere">
-                    <h3>Adidas Prophere</h3>
-                    <p>short descript ...</p>
-                    <div class="product-card__footer">
-                        <button class="btn">Buy now</button>
-                        <span class="product-card__price">85$</span>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <img src="/img/image.png" alt="Adidas Prophere">
-                    <h3>Adidas Prophere</h3>
-                    <p>short descript ...</p>
-                    <div class="product-card__footer">
-                        <button class="btn">Buy now</button>
-                        <span class="product-card__price">85$</span>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <img src="/img/image.png" alt="Adidas Prophere">
-                    <h3>Adidas Prophere</h3>
-                    <p>short descript ...</p>
-                    <div class="product-card__footer">
-                        <button class="btn">Buy now</button>
-                        <span class="product-card__price">85$</span>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <img src="/img/image.png" alt="Adidas Prophere">
-                    <h3>Adidas Prophere</h3>
-                    <p>short descript ...</p>
-                    <div class="product-card__footer">
-                        <button class="btn">Buy now</button>
-                        <span class="product-card__price">85$</span>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <img src="/img/image.png" alt="Adidas Prophere">
-                    <h3>Adidas Prophere</h3>
-                    <p>short descript ...</p>
-                    <div class="product-card__footer">
-                        <button class="btn">Buy now</button>
-                        <span class="product-card__price">85$</span>
-                    </div>
-                </div>
+                <!-- Products will be rendered automatically by JS -->
             </div>
         </section>
         <footer class="footer">
@@ -175,4 +121,6 @@
         </div>
     </main>
 </body>
+<script src="/JS/register.js"></script>
+<script src="/JS/details.js"></script>
 </html>
