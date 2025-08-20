@@ -7,6 +7,104 @@
     <link rel="stylesheet" href="/css/details.css">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="header__top">
+            <div class="header__logo"></div>
+            <div class="header__actions">
+                 <span class="header__cart">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="9" cy="21" r="1"/>
+                <circle cx="20" cy="21" r="1"/>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+              </svg>
+            </span>
+                <a href="#">Login</a>
+                <a href="./details.html">Register</a>
+            </div>
+        </div>
+        <nav class="nav">
+            <div class="nav__container">
+                <ul>
+                    <li><a href="/index.html" class="active">Home</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Woman</a></li>
+                    <li><a href="#">Kid</a></li>
+                    <li><a href="#">Sport</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+     <main class="register-content">
+      <section class="div">
+        <h1 class="text-wrapper">Register</h1>
+        <form>
+          <div class="textbox">
+            <label for="email" class="text-wrapper-2">email</label>
+            <input type="email" id="email" name="email" required aria-describedby="email-required" />
+            <img class="line" src="https://c.animaapp.com/mejsr89sNWRzkG/img/line-2.svg" alt="" />
+            <span class="text-wrapper-3" id="email-required" aria-label="required">(*)</span>
+          </div>
+          <div class="textbox-2">
+            <label for="phone" class="text-wrapper-2">phone</label>
+            <input type="tel" id="phone" name="phone" required aria-describedby="phone-required" />
+            <img class="line" src="https://c.animaapp.com/mejsr89sNWRzkG/img/line-2-4.svg" alt="" />
+            <span class="text-wrapper-3" id="phone-required" aria-label="required">(*)</span>
+          </div>
+          <div class="textbox-3">
+  <label for="name" class="text-wrapper-2">name</label>
+  <input
+    type="text"
+    id="name"
+    name="name"
+    required
+    aria-describedby="name-required"
+    style="position: absolute; width: 346px; top: -1px; left: 0; font-family: 'Inter', Helvetica; font-weight: 400; font-size: 30px; color: #000; background: transparent; border: none; padding: 0;"
+  />
+  <img class="line" src="https://c.animaapp.com/mejsr89sNWRzkG/img/line-2.svg" alt="" />
+  <span class="text-wrapper-3" id="name-required" aria-label="required">(*)</span>
+</div>
+          <div class="textbox-4">
+            <label for="password" class="text-wrapper-2">password</label>
+            <input type="password" id="password" name="password" required aria-describedby="password-required" />
+            <img class="line" src="https://c.animaapp.com/mejsr89sNWRzkG/img/line-2.svg" alt="" />
+            <span class="text-wrapper-3" id="password-required" aria-label="required">(*)</span>
+          </div>
+          <div class="textbox-5">
+            <label for="password-confirm" class="text-wrapper-2">password confirm</label>
+            <input
+              type="password"
+              id="password-confirm"
+              name="password-confirm"
+              required
+              aria-describedby="password-confirm-required"
+            />
+            <img class="line" src="https://c.animaapp.com/mejsr89sNWRzkG/img/line-2.svg" alt="" />
+            <span class="text-wrapper-3" id="password-confirm-required" aria-label="required">(*)</span>
+          </div>
+          <fieldset class="gender-fieldset">
+            <legend class="text-wrapper-4">Gender</legend>
+            <div class="radio">
+              <input type="radio" id="male" name="gender" value="male" class="radio-input" />
+              <label for="male" class="radio-label">
+                <img class="rectangle" alt="" />
+                <div class="div-2"><div class="ellipse"></div></div>
+                <span class="text-wrapper-5">Male</span>
+              </label>
+            </div>
+            <div class="radio-2">
+              <input type="radio" id="female" name="gender" value="female" class="radio-input" />
+              <label for="female" class="radio-label">
+                <img class="img" alt="" />
+                <div class="div-2"></div>
+                <span class="text-wrapper-5">Female</span>
+              </label>
+            </div>
+          </fieldset>
+          <button type="submit" class="button-icon-gradient">
+            <span class="text-wrapper-6">Submit</span>
+          </button>
+        </form>
+      </section>
+    </main>
 </body>
 </html>

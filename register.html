@@ -19,7 +19,7 @@
               </svg>
             </span>
                 <a href="#">Login</a>
-                <a href="#">Register</a>
+                <a href="./details.html">Register</a>
             </div>
         </div>
         <nav class="nav">
@@ -34,91 +34,78 @@
             </div>
         </nav>
     </header>
-    <main>
-        <section class="product-detail">
-            <div class="product-detail__container">
-                <div class="product-detail__image">
-                    <img src="/img/image.png" alt="Product">
-                </div>
-                <div class="product-detail__info"> 
-                    <h2>Product name</h2>
-                    <p class="product-detail__desc">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores pariatur sequi esse ducimus velit dicta sapiente! Totam inventore, tempore enim repellat illum qui a quae aperiam officiis, error repellat sunt nulla!
-                    </p>
-                    <div class="product-detail__sizes">
-                        <span class="label">Available size</span>
-                        <button>38</button>
-                        <button>39</button>
-                        <button>40</button>
-                        <button>41</button>
-                        <button>42</button>
-                    </div>
-                    <div class="product-detail__price">
-                        <span>85$</span>
-                    </div>
-                    <div class="product-detail__quantity">
-                        <button class="btn-qty">-</button>
-                        <input type="text" value="1" readonly>
-                        <button class="btn-qty">+</button>
-                    </div>
-                    <button class="btn-add-cart">Add to cart</button>
-                    <!-- Thêm nút thao tác API -->
-                    <div class="product-detail__actions">
-                        <button id="btn-create" class="btn-action">Thêm sản phẩm</button>
-                        <button id="btn-update" class="btn-action">Sửa sản phẩm</button>
-                        <button id="btn-delete" class="btn-action">Xóa sản phẩm</button>
-                    </div>
-                </div>
+     <main class="register-content">
+      <section class="div">
+        <h1 class="text-wrapper">Register</h1>
+        <form>
+          <div class="textbox">
+            <label for="email" class="text-wrapper-2">email</label>
+            <input type="email" id="email" name="email" required aria-describedby="email-required" />
+            <img class="line" src="https://c.animaapp.com/mejsr89sNWRzkG/img/line-2.svg" alt="" />
+            <span class="text-wrapper-3" id="email-required" aria-label="required">(*)</span>
+          </div>
+          <div class="textbox-2">
+            <label for="phone" class="text-wrapper-2">phone</label>
+            <input type="tel" id="phone" name="phone" required aria-describedby="phone-required" />
+            <img class="line" src="https://c.animaapp.com/mejsr89sNWRzkG/img/line-2-4.svg" alt="" />
+            <span class="text-wrapper-3" id="phone-required" aria-label="required">(*)</span>
+          </div>
+          <div class="textbox-3">
+            <label for="name" class="sr-only">name</label>
+            <input
+              class="email"
+              placeholder="name"
+              type="text"
+              id="name"
+              name="name"
+              required
+              aria-describedby="name-required"
+            />
+            <img class="line" src="https://c.animaapp.com/mejsr89sNWRzkG/img/line-2.svg" alt="" />
+            <span class="text-wrapper-3" id="name-required" aria-label="required">(*)</span>
+          </div>
+          <div class="textbox-4">
+            <label for="password" class="text-wrapper-2">password</label>
+            <input type="password" id="password" name="password" required aria-describedby="password-required" />
+            <img class="line" src="https://c.animaapp.com/mejsr89sNWRzkG/img/line-2.svg" alt="" />
+            <span class="text-wrapper-3" id="password-required" aria-label="required">(*)</span>
+          </div>
+          <div class="textbox-5">
+            <label for="password-confirm" class="text-wrapper-2">password confirm</label>
+            <input
+              type="password"
+              id="password-confirm"
+              name="password-confirm"
+              required
+              aria-describedby="password-confirm-required"
+            />
+            <img class="line" src="https://c.animaapp.com/mejsr89sNWRzkG/img/line-2.svg" alt="" />
+            <span class="text-wrapper-3" id="password-confirm-required" aria-label="required">(*)</span>
+          </div>
+          <fieldset class="gender-fieldset">
+            <legend class="text-wrapper-4">Gender</legend>
+            <div class="radio">
+              <input type="radio" id="male" name="gender" value="male" class="radio-input" />
+              <label for="male" class="radio-label">
+                <img class="rectangle" alt="" />
+                <div class="div-2"><div class="ellipse"></div></div>
+                <span class="text-wrapper-5">Male</span>
+              </label>
             </div>
-        </section>
-        <section class="related-product">
-            <h2>- Related Product -</h2>
-            <div class="product-list">
-                <!-- Products will be rendered automatically by JS -->
+            <div class="radio-2">
+              <input type="radio" id="female" name="gender" value="female" class="radio-input" />
+              <label for="female" class="radio-label">
+                <img class="img" alt="" />
+                <div class="div-2"></div>
+                <span class="text-wrapper-5">Female</span>
+              </label>
             </div>
-        </section>
-        <footer class="footer">
-            <div class="footer__top">
-                <div>
-                    <h4>GET HELP</h4>
-                    <p>Contact us</p>
-                    <p>Shipping</p>
-                    <p>NIKEID</p>
-                    <p>Nike+</p>
-                </div>
-                <div>
-                    <h4>ORDERS</h4>
-                    <p>Payment options</p>
-                    <p>Shipping and delivery</p>
-                    <p>Returns</p>
-                </div>
-                <div>
-                    <h4>REGISTER</h4>
-                    <p>Create one account to manage everything you do with Nike, from your shopping preferences to your Nike+ activity.</p>
-                    <a href="#">Learn more</a>
-                </div>
-            </div>
-            <div class="footer__bottom">
-                <div>
-                    <h4>EMAIL SIGN UP</h4>
-                    <p>Be the first to know about new products and special offers.</p>
-                    <a href="#">Sign up now</a>
-                </div>
-                <div>
-                    <h4>GIFT CARDS</h4>
-                    <p>Give the gift that always fits.</p>
-                    <a href="#">View cards</a>
-                </div>
-                <div>
-                    <h4>STORES NEAR YOU</h4>
-                    <p>Locate a Nike retail store or authorized retailer.</p>
-                    <a href="#">Search</a>
-                </div>
-            </div>
-        </footer>
-        <div class="footer__bottom">
-            <p>&copy; 2023 Your Company. All rights reserved.</p>
-        </div>
+          </fieldset>
+          <button type="submit" class="button-icon-gradient">
+            <span class="text-wrapper-6">Submit</span>
+          </button>
+        </form>
+      </section>
     </main>
 </body>
 <script src="/JS/register.js"></script>
